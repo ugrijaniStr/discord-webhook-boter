@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="./styles.css" rel="stylesheet">
+    <title>StrClient - Webhook Fucker</title>
+  </head>
+  <body>
+    <div class = "mainBox">
+      <div class = "formBox">
+        <input class = "infoInput" placeholder = "Webhook" required/>
+        <input class = "infoInput" placeholder = "Username">
+        <input class = "infoInput" placeholder = "Pfp image">
+        <input class = "infoInput" placeholder = "content">
+        <input class = "infoInput" type = "number" placeholder = "num of messages">
+        <button onclick = 'startAttack()'>START</button>
+      </div>
+      <div class = "consoleBox">
+        <div class = "consoleOutput">
+          <ul id = "consoleInfo">
+            <li style = "margin-bottom: 3%;"><b>StrClient</b> - Version 1.0</li>
+          </ul>
+        </div>
+        <div class = "inputArea">
+          <input class = "consoleInput" placeholder = ">">
+          <button class = "hiddenButton" onclick = "startConsole()"></button>
+        </div>
+      </div>
+    </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
